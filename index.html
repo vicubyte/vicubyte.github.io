@@ -26,7 +26,7 @@
 
     .social-icons a {
       color: #fff;
-      font-size: 2.5vw;
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
       text-decoration: none;
       transition: transform 0.3s, color 0.3s;
     }
@@ -39,33 +39,24 @@
     h1 {
       margin: 0 0 15px 0;
       color: #fff;
-      font-size: 8vw;
+      font-size: clamp(4rem, 8vw, 7rem);
       font-family: sans-serif;
     }
 
     p {
       margin: 0;
       color: #fff;
-      font-size: 2.5vw;
+      font-size: clamp(1rem, 2.5vw, 2rem);
       margin-top: 0px;
     }
 
     .footer {
       color: #fff;
-      font-size: 1.2vw;
+      font-size: clamp(0.6rem, 2vw, 1rem);
       font-family: sans-serif;
       position: absolute;
       bottom: 20px;
       text-align: center;
-    }
-
-    @media (max-width: 800px) {
-      .footer {
-      font-size: 1.7vw;
-      }
-      .social-icons a {
-      font-size: 3vw;
-      }
     }
   </style>
 </head>
