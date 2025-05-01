@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vicubyte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root {
-      --color-bg: rgb(15, 50, 65);
+      --color-bg: rgb(15, 50, 75);
       --color-tx: rgb(255, 255, 255);
     }
     body {
@@ -60,7 +63,7 @@
       margin: 0 0 15px 0;
       color: var(--color-tx);
       font-size: clamp(4rem, 6vw, 5rem);
-      font-family: sans-serif;
+      font-family: "Electrolize", sans-serif;
     }
 
     p {
@@ -71,29 +74,33 @@
 
     .footer {
       color: var(--color-tx);
-      font-size: clamp(0.6rem, 0.95vw, 0.8rem);
+      font-size: clamp(0.64rem, 0.95vw, 0.8rem);
       font-family: sans-serif;
       position: absolute;
       bottom: 20px;
       text-align: center;
     }
 
-    @media (max-width: 1050px) {
+    @media (max-height: 500px) {
+      .social-icons {
+        left: 20px;
+      }
       .social-icons a {
-        font-size: 2.5vw;
+        font-size: 6.4vh;
       }
       .logo {
-        width: 15vw;
+        width: 39vh;
       }
       h1 {
         margin: 0 0 5px 0;
-        font-size: 6vw;
+        font-size: 15.3vh;
       }
       p {
-        font-size: 1.5vw;
+        font-size: 3.8vh;
       }
       .footer {
-        font-size: 0.95vw;
+        font-size: 3vh;
+        right: 20px;
       }
     }
   </style>
