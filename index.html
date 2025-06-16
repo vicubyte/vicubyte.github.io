@@ -84,6 +84,22 @@
       text-align: center;
     }
 
+    .libro {
+      display: flex;
+      justify-content: center;
+      gap: 1vw;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: clamp(30px, 2.5vw, 40px);
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .libro:hover {
+      transform: scale(1.3);
+    }
+
     @media (max-height: 500px) {
       .social-icons {
         left: 20px;
@@ -123,5 +139,8 @@
   <p>Hardware and software for you</p>
   </div>
   <div class="footer">Vicubyte SAC - RUC: 20614215489<br>vicubyte@gmail.com<br>Lima, Perú</div>
+  <a href="https://forms.gle/vbXEcD6T22sXz6ZC8" target="_blank">
+    <img src="librodr.png" title="Libro de reclamaciones" alt="Libro de reclamaciones" class="libro">
+  </a>
 </body>
 </html>
